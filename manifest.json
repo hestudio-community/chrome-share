@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Chrome Share",
+  "description": "Fixed an issue where Chrome could not invoke the system share functionality.",
+  "version": "1.0.0",
+  "permissions": ["contextMenus", "scripting", "activeTab"],
+  "background": {
+    "service_worker": "services/main.js",
+    "type": "module"
+  },
+  "icons": {
+    "16": "assets/icons/default-16.png",
+    "48": "assets/icons/default-48.png",
+    "128": "assets/icons/default-128.png"
+  },
+  "action": {
+    "default_icon": "assets/icons/default-128.png"
+  }
+}
